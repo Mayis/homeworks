@@ -118,3 +118,14 @@ function copyArrayFn(arr) {
 	}
 	return newArr;
 }
+
+// spread operator
+
+function mySpreadWithArr(mainArr, spreadArr) {
+	for (let i = 0; i < spreadArr.length; i++) {
+		mainArr.push(spreadArr[i]);
+	}
+	return mainArr;
+}
+
+console.log(mySpreadWithArr([1, 2, 3], [4, 5]));
